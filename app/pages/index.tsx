@@ -29,6 +29,8 @@ const UserInfo = () => {
           User id: <code>{currentUser.id}</code>
           <br />
           User role: <code>{currentUser.role}</code>
+          <br />
+          User name: <code>{currentUser.name}</code>
         </div>
       </>
     )

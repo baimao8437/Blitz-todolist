@@ -13,6 +13,7 @@ const LoginPage: BlitzPage = () => {
           router.push(next)
         }}
       />
+      <a href="/api/auth/google">Login with Google</a>
     </div>
   )
 }
