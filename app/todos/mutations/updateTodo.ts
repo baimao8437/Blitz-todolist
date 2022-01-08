@@ -5,7 +5,8 @@ import { z } from "zod"
 const UpdateTodo = z.object({
   id: z.number(),
   name: z.string(),
-  userId: z.number(),
+  userId: z.number().optional(),
+  completed: z.boolean().optional(),
 })
 
 export default resolver.pipe(
