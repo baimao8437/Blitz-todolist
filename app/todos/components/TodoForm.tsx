@@ -7,6 +7,7 @@ export function TodoForm<S extends z.ZodType<any, any>>(props: FormProps<S>) {
   return (
     <Form<S> {...props}>
       <LabeledTextField name="name" label="Name" placeholder="Name" />
+      <LabeledTextField name="userId" type="number" label="User id" placeholder="User id" />
     </Form>
   )
 }

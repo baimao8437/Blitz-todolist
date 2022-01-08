@@ -4,6 +4,7 @@ import { z } from "zod"
 
 const CreateTodo = z.object({
   name: z.string(),
+  userId: z.number(),
 })
 
 export default resolver.pipe(resolver.zod(CreateTodo), resolver.authorize(), async (input) => {
